@@ -1,6 +1,4 @@
 {
-	"$schema": "https://json.schemastore.org/tsconfig",
-	"display": "Node 18",
 	"compilerOptions": {
 		/* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -94,9 +92,9 @@
 		"noImplicitOverride": true /* Ensure overriding members in derived classes are marked with an override modifier. */,
 		"allowUnusedLabels": true /* Disable error reporting for unused labels. */,
 		"allowUnreachableCode": false /* Disable error reporting for unreachable code. */,
-		// "noPropertyAccessFromIndexSignature": true,       /* Enforces using indexed accessors for keys declared using an indexed type. */
-		// "exactOptionalPropertyTypes": true,               /* Interpret optional property types as written, rather than adding 'undefined'. */
-		// "strictPropertyInitialization": true,             /* Check for class properties that are declared but not set in the constructor. */
+		"noPropertyAccessFromIndexSignature": true,       /* Enforces using indexed accessors for keys declared using an indexed type. */
+		"exactOptionalPropertyTypes": true,               /* Interpret optional property types as written, rather than adding 'undefined'. */
+		"strictPropertyInitialization": true,             /* Check for class properties that are declared but not set in the constructor. */
 
 		/* Completeness */
 		"skipDefaultLibCheck": true /* Skip type checking .d.ts files that are included with TypeScript. */,
