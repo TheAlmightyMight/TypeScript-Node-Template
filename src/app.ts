@@ -1,14 +1,14 @@
 import express from 'express'
 import { Request, Response } from 'express'
 import { readFile } from 'node:fs/promises'
-import { setup_env_vars } from './utils/env'
+import { setupEnvVars } from './utils/setupEnvVars'
 
 const envs = new Map([
 	['MODE', 'dev'],
 	['FOO', 'bar'],
 ])
 
-setup_env_vars(envs)
+setupEnvVars(envs)
 
 const app = express()
 const port = 30042
