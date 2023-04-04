@@ -1,7 +1,7 @@
 import express from 'express'
 import { Request, Response } from 'express'
 import { readFile } from 'node:fs/promises'
-import { setupEnvVars } from './utils/setupEnvVars'
+import { setupEnvVars } from './utils/setupEnvVars.js'
 
 const envs = new Map([
 	['MODE', 'dev'],

@@ -5,7 +5,8 @@
 	"main": "./src/app.ts",
 	"type": "module",
 	"scripts": {
-		"prepare": "npm i && husky install",
+		"setup:dev": "./scripts/prepare.bash development",
+		"setup:prod": "./scripts/prepare.bash production",
 		"test": "jest",
 		"lint": "eslint src/**/*.ts --max-warnings 0 --cache",
 		"fix": "eslint --fix",
