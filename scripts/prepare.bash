@@ -3,12 +3,12 @@
 echo "current mode is $1"
 
 if [[ "$1" =~ "production" ]]; then
-    npm ci && npm run start
-    exit 0
+    npm i --omit=dev && npm i -g typescript && npm run build && npm run start && rm -r src && rm .tsbuildinfo
 elif [[ "$1" =~ "development" ]]; then
     npm i && husky install
-    exit 0
 else
     echo "Wrong positional argument was given, exiting..."
     exit 1
 fi
+
+exit 0

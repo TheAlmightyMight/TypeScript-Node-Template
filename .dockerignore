@@ -1,25 +1,23 @@
-**/node_modules/
+.vscode
+
+node_modules
 npm-debug.log
+
+dist
 
 __tests__
 
 jest.config.*
 nodemon.json
+.husky
 
-!dist/
-
-.dockerfile
-.dockerignore
-.docker-compose.*
+.docker*
+docker*
 
 .eslint*
 .prettier*
 
-.git
-.gitignore
-
-.eslint*
-.prettier*
+.git*
 
 .coverage
 .coverage.*
