@@ -1,26 +1,18 @@
 import express from 'express'
 import { Request, Response } from 'express'
-import { readFile } from 'node:fs/promises'
-import { setupEnvVars } from './utils/setupEnvVars.js'
+import { setupEnvVars } from './utils/setupEnvVars'
 
-const envs = new Map([
-	['MODE', 'dev'],
-	['FOO', 'bar'],
-])
+const envs = new Map([['FOO', 'bar']])
 
 setupEnvVars(envs)
 
 const app = express()
 const port = 30042
 
-console.log(process.env.MODE)
+console.log(process.env.FOO)
 
 app.get('/', async (_: Request, res: Response) => {
-	res.send(
-		await readFile('src\\views\\index.html', {
-			encoding: 'utf-8',
-		}),
-	)
+	res.send('Hello world!')
 })
 
 app.listen(port, () =>

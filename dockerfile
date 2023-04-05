@@ -1,7 +1,7 @@
-FROM node:alpine
+FROM node:18.12.1-alpine
 ENV NODE_ENV=production
 WORKDIR /app
 
-COPY package*.json, ./dist, ./
+COPY . .
 
-RUN "current mode is ${NODE_ENV}" && npm run start
+RUN npm run setup:prod

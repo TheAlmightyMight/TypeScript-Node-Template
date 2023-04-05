@@ -1,14 +1,12 @@
-#!/usr/bin/env bash
-
-echo "current mode is $1"
+echo "current mode is $1 \n"
 
 if [[ "$1" =~ "production" ]]; then
-    npm ci && npm run start
-    exit 0
+    npm i && npm i -g typescript && npm run build
 elif [[ "$1" =~ "development" ]]; then
     npm i && husky install
-    exit 0
 else
     echo "Wrong positional argument was given, exiting..."
     exit 1
 fi
+
+exit 0
