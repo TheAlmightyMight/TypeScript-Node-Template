@@ -1,5 +1,7 @@
 FROM node:18.12.1-alpine
 
+ENV NODE_ENV=production
+
 WORKDIR /app
 
 COPY . .
@@ -7,7 +9,7 @@ COPY . .
 RUN apk add --no-cache bash
 RUN npm run setup:prod
 
-EXPOSE 3000
+EXPOSE 5000
 
 ENTRYPOINT [ "npm run" ]
 CMD [ "start" ]

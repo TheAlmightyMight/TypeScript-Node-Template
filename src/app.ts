@@ -2,7 +2,7 @@ import express from 'express'
 
 import { connect } from 'mongoose'
 
-console.log(process.env.CONNECTION_STRING)
+import { globalErrorHandler } from './middleware/errorHandler'
 
 connect(process.env.CONNECTION_STRING as string, {}).then(
 	() => console.log('Connected'),
@@ -10,12 +10,14 @@ connect(process.env.CONNECTION_STRING as string, {}).then(
 )
 
 const app = express()
-const port = 30042
+const port = 5000
 
 app.get('/', async (_, res) => {
 	res.send('Hello world!')
 })
 
+app.use(globalErrorHandler)
+
 app.listen(port, () =>
-	console.log(`Example app listening on http://0.0.0.0:${port}`),
+	console.log(`Example app listening on http://localhost:${port}`),
 )
