@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.9'
 
 services:
   server:
@@ -8,12 +8,13 @@ services:
     depends_on:
       - mongo
     restart: on-failure
+    tty: true
     environment:
       CONNECTION_STRING: mongodb://mongo
     volumes:
       - serverdata:/data/server
     ports:
-      - 3000:30042
+      - 5000:5000
 
   mongo:
     image: mongo:latest

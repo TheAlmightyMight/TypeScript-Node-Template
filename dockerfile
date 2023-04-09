@@ -10,6 +10,3 @@ RUN apk add --no-cache bash
 RUN npm run setup:prod
 
 EXPOSE 5000
-
-ENTRYPOINT [ "npm run" ]
-CMD [ "start" ]
