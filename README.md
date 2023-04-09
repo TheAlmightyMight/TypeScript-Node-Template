@@ -1,5 +1,7 @@
 # TypeScript-Node-Template
 
+Very easy to use and set up Express app created to ease the process of starting a new (TypeScript + node JS) project.
+
 ## Available scripts
 
 To set up your app for production you can run `npm run setup:prod` or `npm run setup:dev` for development (when first installed / cloned the repository)
