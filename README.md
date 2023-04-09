@@ -1,5 +1,7 @@
 # TypeScript-Node-Template
 
+## Available scripts
+
 To set up your app for production you can run `npm run setup:prod` or `npm run setup:dev` for development (when first installed / cloned the repository)
 
 To start a dev server type `npm run dev`
