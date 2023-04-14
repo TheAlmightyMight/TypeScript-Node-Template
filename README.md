@@ -2,6 +2,8 @@
 
 Very easy to use and set up Express app created to ease the process of starting a new (TypeScript + node JS) project.
 
+Todo: add types folder and include in typeRoots option
+
 ## Available scripts
 
 To set up your app for production you can run `npm run setup:prod`
