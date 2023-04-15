@@ -1,7 +1,7 @@
 echo "current mode is $1 \n"
 
 if [[ "$1" =~ "production" ]]; then
-    npm i && npm i -g typescript && npm run build
+    npm i --omit=dev && npm i -g typescript && npm run build
 elif [[ "$1" =~ "development" ]]; then
     npm i && husky install
 else
