@@ -62,13 +62,14 @@
 		"noImplicitOverride": true /* Ensure overriding members in derived classes are marked with an override modifier. */,
 		"allowUnusedLabels": true /* Disable error reporting for unused labels. */,
 		"allowUnreachableCode": false /* Disable error reporting for unreachable code. */,
+		"strictPropertyInitialization": true /* Check for class properties that are declared but not set in the constructor. */,
 		// "noPropertyAccessFromIndexSignature": true,       /* Enforces using indexed accessors for keys declared using an indexed type. */
 		// "exactOptionalPropertyTypes": true,               /* Interpret optional property types as written, rather than adding 'undefined'. */
-		// "strictPropertyInitialization": true,             /* Check for class properties that are declared but not set in the constructor. */
 
 		/* Completeness */
 		"skipDefaultLibCheck": true /* Skip type checking .d.ts files that are included with TypeScript. */,
-		"skipLibCheck": true /* Skip type checking all .d.ts files. */
+		"skipLibCheck": true /* Skip type checking all .d.ts files. */,
+		"typeRoots": ["./types/"]
 	},
 
 	"ts-node": {
