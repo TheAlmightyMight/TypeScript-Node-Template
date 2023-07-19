@@ -15,7 +15,11 @@
 		"start": "node --harmony --experimental-specifier-resolution=node ./dist/src/app.js",
 		"format": "prettier --check -w --cache ."
 	},
-	"keywords": [],
+	"keywords": [
+		"Template",
+		"Node JS template",
+		"TypeScript template"
+	],
 	"author": "Klimenty Karavaev",
 	"license": "ISC",
 	"devDependencies": {
