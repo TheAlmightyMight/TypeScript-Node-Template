@@ -12,7 +12,7 @@ To start a dev server type `npm run dev`
 To build your app type `npm run build`
 
 To lint your code type `npm run lint`
- 
+
 To lint and fix your code type `npm run fix`
 
 To run your tests type `npm run test`
@@ -20,4 +20,5 @@ To run your tests type `npm run test`
 To start your app in production type `npm run start`
 
 ## Todo:
-- add types folder and include in typeRoots option
+
+-   add types folder and include in typeRoots option
