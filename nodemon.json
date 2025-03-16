@@ -2,12 +2,9 @@
 	"restartable": "rs",
 	"verbose": true,
 	"execMap": {
-		"js": "node --harmony",
-		"ts": "ts-node"
+		"js": "node --env-file=.env",
+		"ts": "tsx --env-file=.env"
 	},
-	"watch": ["./src/"],
-	"ext": "js,json,ts,html",
-	"events": {
-		"restart": ""
-	}
+	"watch": ["./src/", ".env", "package.json"],
+	"ext": "js,json,ts,html"
 }
