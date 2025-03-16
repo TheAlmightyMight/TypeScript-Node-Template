@@ -6,7 +6,7 @@
 		"tsBuildInfoFile": "./dist/.tsbuildinfo",
 
 		"target": "ESNext",
-		"lib": [],
+		"lib": ["ESNext"],
 		"experimentalDecorators": true,
 		"moduleDetection": "force",
 

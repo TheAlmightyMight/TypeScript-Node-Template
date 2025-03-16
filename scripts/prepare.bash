@@ -8,5 +8,3 @@ else
     echo "Wrong positional argument was given, exiting..."
     exit 1
 fi
-
-exit 0
