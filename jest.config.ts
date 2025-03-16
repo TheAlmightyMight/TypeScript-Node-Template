@@ -5,21 +5,21 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 
 export default {
-	preset: 'ts-jest',
+	preset: "ts-jest",
 
 	bail: 0,
 
 	clearMocks: true,
 
-	coverageProvider: 'v8',
+	coverageProvider: "v8",
 
-	testEnvironment: 'node',
+	testEnvironment: "node",
 
-	rootDir: './__tests__/',
+	rootDir: "./__tests__/",
 
-	moduleFileExtensions: ['ts', 'js', 'json'],
+	moduleFileExtensions: ["ts", "js", "json"],
 
 	resetMocks: true,
 
-	testMatch: ['**/__tests__/**/*.[jt]s', '**/?(*.)+(spec|test).[tj]s?'],
-}
+	testMatch: ["**/__tests__/**/*.[jt]s", "**/?(*.)+(spec|test).[tj]s?"],
+};

@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
     server:
@@ -24,11 +24,11 @@ services:
             ME_CONFIG_MONGODB_ADMINUSERNAME: admin
             ME_CONFIG_MONGODB_ADMINPASSWORD: admin
             ME_CONFIG_MONGODB_SERVER: mongo
-            ME_CONFIG_MONGODB_PORT: '27017'
+            ME_CONFIG_MONGODB_PORT: "27017"
         volumes:
             - mongodata:/data/db
         ports:
-            - '0.0.0.0:27017:27017'
+            - "0.0.0.0:27017:27017"
 
 volumes:
     serverdata:
