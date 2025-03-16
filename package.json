@@ -24,7 +24,8 @@
 		"format": "prettier --check -w --cache .",
 		"setup:prod": "./scripts/prepare.bash production",
 		"setup:dev": "./scripts/prepare.bash development",
-		"lint": "eslint src/**/*.ts --max-warnings 0 --cache"
+		"lint": "eslint src/**/*.ts --max-warnings 0 --cache",
+		"postinstall": "husky install"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.21.0",
