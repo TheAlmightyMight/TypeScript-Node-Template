@@ -1,13 +1,11 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"display": "Node 18",
 	"compilerOptions": {
 		"incremental": true,
 		"tsBuildInfoFile": "./dist/.tsbuildinfo",
 
-		"target": "ESNext",
+		"target": "ES6",
 		"lib": ["ESNext"],
-		"experimentalDecorators": true,
 		"moduleDetection": "force",
 
 		"module": "ESNext",
@@ -42,13 +40,12 @@
 		"noUncheckedIndexedAccess": true,
 		"noImplicitOverride": true,
 		"allowUnusedLabels": true,
-		"allowUnreachableCode": false,
-		"noPropertyAccessFromIndexSignature": false,
+		"allowUnreachableCode": true,
+		"noPropertyAccessFromIndexSignature": true,
 		"exactOptionalPropertyTypes": true,
 		"strictPropertyInitialization": true,
-
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
 
 		"skipDefaultLibCheck": true,
 		"skipLibCheck": true

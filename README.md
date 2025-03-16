@@ -4,9 +4,6 @@ Very easy to use and set up Express app created to ease the process of starting 
 
 ## Available scripts
 
-To set up your app for production you can run `npm run setup:prod`
-or you can run `npm run setup:dev` for development (when first installed / cloned the repository)
-
 To start a dev server type `npm run dev`
 
 To build your app type `npm run build`
@@ -20,5 +17,3 @@ To run your tests type `npm run test`
 To start your app in production type `npm run start`
 
 ## Todo:
-
--   add types folder and include in typeRoots option
